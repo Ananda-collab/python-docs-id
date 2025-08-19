@@ -32,11 +32,11 @@ msgid ""
 "order ``C``, ``B``, ``A``."
 msgstr ""
 "The :mod:'atexit' Modul ini mendefinisikan fungsi untuk mendaftarkan dan menghapus pendaftaran"
-“Fungsi pembersihan. Fungsi yang terdaftar secara otomatis akan dieksekusi ”
-“saat interpreter berakhir secara normal. :mod:`atexit` menjalankan fungsi-fungsi ini dalam ”
-“urutan terbalik dari urutan pendaftarannya; jika Anda mendaftarkan ``A``, ”
-“``B``, dan ``C``, pada saat interpreter berakhir, mereka akan dijalankan dalam urutan"
-“``C``, ``B``, ``A``.”
+"Fungsi pembersihan. Fungsi yang terdaftar secara otomatis akan dieksekusi"
+"saat interpreter berakhir secara normal. :mod:`atexit` menjalankan fungsi-fungsi ini dalam"
+"urutan terbalik dari urutan pendaftarannya; jika Anda mendaftarkan ``A``,"
+"``B``, dan ``C``, pada saat interpreter berakhir, mereka akan dijalankan dalam urutan"
+"``C``, ``B``, ``A``."
 
 #: ../../library/atexit.rst:19
 msgid ""
