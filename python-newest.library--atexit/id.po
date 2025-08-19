@@ -20,6 +20,7 @@ msgstr ""
 #: ../../library/atexit.rst:2
 msgid ":mod:`!atexit` --- Exit handlers"
 msgstr ""
+":mod:' !atexit" --- penangan keluar"
 
 #: ../../library/atexit.rst:12
 msgid ""
@@ -30,6 +31,12 @@ msgid ""
 "``B``, and ``C``, at interpreter termination time they will be run in the "
 "order ``C``, ``B``, ``A``."
 msgstr ""
+"The :mod:'atexit' Modul ini mendefinisikan fungsi untuk mendaftarkan dan menghapus pendaftaran"
+“Fungsi pembersihan. Fungsi yang terdaftar secara otomatis akan dieksekusi ”
+“saat interpreter berakhir secara normal. :mod:`atexit` menjalankan fungsi-fungsi ini dalam ”
+“urutan terbalik dari urutan pendaftarannya; jika Anda mendaftarkan ``A``, ”
+“``B``, dan ``C``, pada saat interpreter berakhir, mereka akan dijalankan dalam urutan ”
+“``C``, ``B``, ``A``.”
 
 #: ../../library/atexit.rst:19
 msgid ""
@@ -37,19 +44,23 @@ msgid ""
 "program is killed by a signal not handled by Python, when a Python fatal "
 "internal error is detected, or when :func:`os._exit` is called."
 msgstr ""
-
+"**Catatan:** Fungsi yang didaftarkan melalui modul ini tidak akan dipanggil ketika"
+"program dihentikan oleh sinyal yang ditangani oleh Python, ketika terjadi kesalahan internal fatal Python"
+"Kesalahan internal terdeteksi, atau ketika fungsi: 'os_exit' dipanggil"
 #: ../../library/atexit.rst:23
 msgid ""
 "**Note:** The effect of registering or unregistering functions from within a"
 " cleanup function is undefined."
 msgstr ""
-
+"**Catatan:** Efek dari mendaftarkan atau menghapus pendaftaran fungsi dari dalam sebuah"
+"fungsi pembersihan tidak didefinisikan."
 #: ../../library/atexit.rst:26
 msgid ""
 "When used with C-API subinterpreters, registered functions are local to the "
 "interpreter they were registered in."
 msgstr ""
-
+"ketika menggunakan dengan subinterpreter C - API, fungsi yang terdaftar bersifat lokal pada"
+"interpreter tempat mereka didaftarkan."
 #: ../../library/atexit.rst:32
 msgid ""
 "Register *func* as a function to be executed at termination.  Any optional "
@@ -57,7 +68,9 @@ msgid ""
 ":func:`register`.  It is possible to register the same function and "
 "arguments more than once."
 msgstr ""
-
+"Daftarkan *func* sebagai fungsi yang akan dieksekusi saat program berakhir. Argumen opsional apapun"
+"yang akan diteruskan ke *func* harus diteruskan ke argumen ke"
+"func:'register'. Dimungkinkan untuk mendaftarkan fungsi dan argumen yang sama lebih dari sekali."
 #: ../../library/atexit.rst:37
 msgid ""
 "At normal program termination (for instance, if :func:`sys.exit` is called "
@@ -66,7 +79,11 @@ msgid ""
 "modules will normally be imported before higher level modules and thus must "
 "be cleaned up later."
 msgstr ""
-
+"Pada penghentian program normal (misalnya, jika fungsi: 'sys.exit' dipanggil"
+"atau eksekusi modul utama selesai), semua fungsi yang terdaftar akan dipanggil"
+"dalam urutan terakhir masuk, pertama keluar. Asumsinya adalah modul tingkat bawah"
+"biasanya diimpor sebelum modul tingkat atas dan oleh karena itu harus"
+"dibersihkan kemudian."
 #: ../../library/atexit.rst:43
 msgid ""
 "If an exception is raised during execution of the exit handlers, a traceback"
@@ -74,13 +91,17 @@ msgid ""
 "information is saved.  After all exit handlers have had a chance to run, the"
 " last exception to be raised is re-raised."
 msgstr ""
-
+"Jika terjadi pengecualian selama eksekusi penanganan keluar, sebuah penelusuran balik"
+"akan dicetak (kecuali :exc:'SystemExit' terpicu) dan pengecualian"
+"informasi disimpan. Setekah semua penanganan keluar memiliki kesempatan untuk dijalankan"
+"pengecualian terakhir yang terpicu akan dipicu kembali."
 #: ../../library/atexit.rst:48
 msgid ""
 "This function returns *func*, which makes it possible to use it as a "
 "decorator."
 msgstr ""
-
+"Fungsi ini mengembalikan *func*, yang memungkinkan penggunanya sebagai"
+"dekorator."
 #: ../../library/atexit.rst:52
 msgid ""
 "Starting new threads or calling :func:`os.fork` from a registered function "
@@ -88,13 +109,17 @@ msgid ""
 "thread states while internal :mod:`threading` routines or the new process "
 "try to use that state. This can lead to crashes rather than clean shutdown."
 msgstr ""
-
+"Memulai thread baru atau memanggil :func:'os.fork' dari fungsi yang terdaftar"
+"Dapat menyebabkan kondisi race antara thread runtime Python utama yang membebaskan"
+"status thread sementara rutin internal :mod:'threading' atau proses baru"
+"berusaha menggunakan status tersebut. Hal ini dapat menyebabkan kegagalan daripada penutupan yang bersih."
 #: ../../library/atexit.rst:58
 msgid ""
 "Attempts to start a new thread or :func:`os.fork` a new process in a "
 "registered function now leads to :exc:`RuntimeError`."
 msgstr ""
-
+"Upaya untuk memulai thread baru atau :func:'os.fork' proses baru dalam sebuah"
+"fungsi yang terdaftar sekarang menyebabkan :exc:'RuntimeError'."
 #: ../../library/atexit.rst:64
 msgid ""
 "Remove *func* from the list of functions to be run at interpreter shutdown. "
@@ -104,21 +129,27 @@ msgid ""
 "comparisons (``==``) are used internally during unregistration, so function "
 "references do not need to have matching identities."
 msgstr ""
-
+"Hapus *func* dari daftar fungsi yang akan dijalankan saat penutupan interpreter."
+":func:'unregister' tidak melakukan apa-apa secara diam-diam jika *func* belum pernah"
+"didaftarkan sebelumnya. Jika *func* telah didaftarkan lebih dari sekali, setiap kemunculan"
+"fungsi tersebut dalam tumpukan panggilan :mod:'atexit' akan dihapus"
+"perbandingan kesamaan (''=='') digunakan secara internal selama proses penghapusan pendaftaran, sehingga referensi fungsi"
+"tidak perlu memiliki identitas yang sama."
 #: ../../library/atexit.rst:74
 msgid "Module :mod:`readline`"
 msgstr ""
-
+"Modul :mod:'readline'"
 #: ../../library/atexit.rst:75
 msgid ""
 "Useful example of :mod:`atexit` to read and write :mod:`readline` history "
 "files."
 msgstr ""
-
+"Contoh berguna dari :mod:'atexit' untuk membaca dan menulis riwayat :mod:'readline'"
+"berkas"
 #: ../../library/atexit.rst:82
 msgid ":mod:`atexit` Example"
 msgstr ""
-
+":mod:'atexit' contoh"
 #: ../../library/atexit.rst:84
 msgid ""
 "The following simple example demonstrates how a module can initialize a "
@@ -126,7 +157,10 @@ msgid ""
 " automatically when the program terminates without relying on the "
 "application making an explicit call into this module at termination. ::"
 msgstr ""
-
+"Contoh sederhana berikut ini menunjukkan bagaimana sebuah modul dapat menginisialisai"
+"penghitung dari berkas saat diimpor dan menyimpan nilai terbaru penghitung tersebut"
+"secara otomatis saat program berakhir tanpa bergantung pada"
+"aplikasi yang melakukan panggilan eksplisit ke modul ini saat program berakhir. ::"
 #: ../../library/atexit.rst:89
 msgid ""
 "try:\n"
@@ -147,13 +181,29 @@ msgid ""
 "\n"
 "atexit.register(savecounter)"
 msgstr ""
-
+"   buka dengan('counterfile') sebagai infile:\n"
+"        _count = int(infile.read())\n”
+“kecuali FileNotFoundError:\n”
+“    _count = 0\n”
+“\n”
+“def incrcounter(n):\n”
+“    global _count\n”
+“    _count = _count + n\n”
+“\n”
+“def savecounter():\n”
+“    buka dengan(‘counterfile’, ‘w’) as outfile:\n”
+“        outfile.write(‘%d’ % _count)\n”
+“\n”
+“import atexit\n”
+“\n”
+“atexit.daftar(savecounter)”
 #: ../../library/atexit.rst:107
 msgid ""
 "Positional and keyword arguments may also be passed to :func:`register` to "
 "be passed along to the registered function when it is called::"
 msgstr ""
-
+“Argumen posisi dan kata kunci juga dapat diteruskan ke :func:`register` untuk ”
+“diteruskan ke fungsi yang terdaftar saat fungsi tersebut dipanggil::”
 #: ../../library/atexit.rst:110
 msgid ""
 "def goodbye(name, adjective):\n"
@@ -165,11 +215,18 @@ msgid ""
 "# or:\n"
 "atexit.register(goodbye, adjective='nice', name='Donny')"
 msgstr ""
-
+“def goodbye(nama, kata sifat):\n”
+“    print(‘Selamat tinggal %s, senang bertemu denganmu.’ % (nama, kata sifat))\n”
+“\n”
+“import atexit\n”
+“\n”
+“atexit.register(goodbye, ‘Donny’, ‘nice’)\n”
+“# atau:\n”
+“atexit.register(goodbye, adjective=‘nice’, nama=‘Donny’)”
 #: ../../library/atexit.rst:119
 msgid "Usage as a :term:`decorator`::"
 msgstr ""
-
+"Penggunaan sebagai :term:'dekorator'::"
 #: ../../library/atexit.rst:121
 msgid ""
 "import atexit\n"
@@ -178,7 +235,12 @@ msgid ""
 "def goodbye():\n"
 "    print('You are now leaving the Python sector.')"
 msgstr ""
-
+“import atexit\n”
+“\n”
+“@atexit.register\n”
+“def goodbye():\n”
+“    print(‘Anda sekarang meninggalkan sektor Python.’)”
 #: ../../library/atexit.rst:127
 msgid "This only works with functions that can be called without arguments."
 msgstr ""
+"Ini hanya berfungsi dengan fungsi yang dapat dipanggil tanpa argumen."
