@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../../library/atexit.rst:2
 msgid ":mod:`!atexit` --- Exit handlers"
-msgstr ""
-":mod:' !atexit" --- penangan keluar"
+- msgstr ""
++ msgstr ":mod:' !atexit" --- penangan keluar"
 
 #: ../../library/atexit.rst:12
 msgid ""
