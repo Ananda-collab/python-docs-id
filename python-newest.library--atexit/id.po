@@ -2,7 +2,9 @@
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Rizki Dwi Ananda <rizkidwiananda22@gmail.com>, 2025
+#
+# RIZKI DWI ANANDA <rizkidwiananda22@gmail.com>, 2025.
+#
 #, fuzzy
 msgid ""
 msgstr ""
