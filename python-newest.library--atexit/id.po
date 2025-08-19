@@ -202,8 +202,8 @@ msgid ""
 "Positional and keyword arguments may also be passed to :func:`register` to "
 "be passed along to the registered function when it is called::"
 msgstr ""
-“Argumen posisi dan kata kunci juga dapat diteruskan ke :func:`register` untuk ”
-“diteruskan ke fungsi yang terdaftar saat fungsi tersebut dipanggil::”
+"Argumen posisi dan kata kunci juga dapat diteruskan ke :func:`register` untuk"
+"diteruskan ke fungsi yang terdaftar saat fungsi tersebut dipanggil::"
 #: ../../library/atexit.rst:110
 msgid ""
 "def goodbye(name, adjective):\n"
@@ -215,14 +215,14 @@ msgid ""
 "# or:\n"
 "atexit.register(goodbye, adjective='nice', name='Donny')"
 msgstr ""
-“def goodbye(nama, kata sifat):\n”
-“    print(‘Selamat tinggal %s, senang bertemu denganmu.’ % (nama, kata sifat))\n”
-“\n”
-“import atexit\n”
-“\n”
-“atexit.register(goodbye, ‘Donny’, ‘nice’)\n”
-“# atau:\n”
-“atexit.register(goodbye, adjective=‘nice’, nama=‘Donny’)”
+"def goodbye(nama, kata sifat):\n"
+"    print(‘Selamat tinggal %s, senang bertemu denganmu.’ % (nama, kata sifat))\n"
+"\n"
+"import atexit\n"
+"\n"
+"atexit.register(goodbye, 'Donny', ‘nice’)\n"
+"# atau:\n"
+"atexit.register(goodbye, adjective='nice', nama=‘Donny’)"
 #: ../../library/atexit.rst:119
 msgid "Usage as a :term:`decorator`::"
 msgstr ""
@@ -235,11 +235,11 @@ msgid ""
 "def goodbye():\n"
 "    print('You are now leaving the Python sector.')"
 msgstr ""
-“import atexit\n”
-“\n”
-“@atexit.register\n”
-“def goodbye():\n”
-“    print(‘Anda sekarang meninggalkan sektor Python.’)”
+"import atexit\n"
+"\n"
+"@atexit.register\n"
+"def goodbye():\n"
+"    print(‘Anda sekarang meninggalkan sektor Python.’)"
 #: ../../library/atexit.rst:127
 msgid "This only works with functions that can be called without arguments."
 msgstr ""
