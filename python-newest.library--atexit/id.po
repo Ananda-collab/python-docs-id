@@ -21,8 +21,7 @@ msgstr ""
 
 #: ../../library/atexit.rst:2
 msgid ":mod:`!atexit` --- Exit handlers"
-msgstr ""
-":mod:' !atexit" --- penangan keluar"
+msgstr ":mod:' !atexit" --- penangan keluar"
 
 #: ../../library/atexit.rst:12
 msgid ""
@@ -139,8 +138,7 @@ msgstr ""
 "tidak perlu memiliki identitas yang sama."
 #: ../../library/atexit.rst:74
 msgid "Module :mod:`readline`"
-msgstr ""
-"Modul :mod:'readline'"
+msgstr "Modul :mod:'readline'"
 #: ../../library/atexit.rst:75
 msgid ""
 "Useful example of :mod:`atexit` to read and write :mod:`readline` history "
@@ -150,8 +148,7 @@ msgstr ""
 "berkas"
 #: ../../library/atexit.rst:82
 msgid ":mod:`atexit` Example"
-msgstr ""
-":mod:'atexit' contoh"
+msgstr ":mod:'atexit' contoh"
 #: ../../library/atexit.rst:84
 msgid ""
 "The following simple example demonstrates how a module can initialize a "
@@ -227,8 +224,7 @@ msgstr ""
 "atexit.register(goodbye, adjective='nice', nama=‘Donny’)"
 #: ../../library/atexit.rst:119
 msgid "Usage as a :term:`decorator`::"
-msgstr ""
-"Penggunaan sebagai :term:'dekorator'::"
+msgstr "Penggunaan sebagai :term:'dekorator'::"
 #: ../../library/atexit.rst:121
 msgid ""
 "import atexit\n"
@@ -244,5 +240,4 @@ msgstr ""
 "    print(‘Anda sekarang meninggalkan sektor Python.’)"
 #: ../../library/atexit.rst:127
 msgid "This only works with functions that can be called without arguments."
-msgstr ""
-"Ini hanya berfungsi dengan fungsi yang dapat dipanggil tanpa argumen."
+msgstr "Ini hanya berfungsi dengan fungsi yang dapat dipanggil tanpa argumen."
